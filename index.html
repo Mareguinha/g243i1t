@@ -3,38 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="./script/script.js"></script>
-    <link rel="stylesheet" href="./estilo/basico.css">
+    <title>Estrutura</title>
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-    <header class="barra">
-        <span class="mobile">Mobile</span>
-        <span class="tablet">Tablet</span>
-        <span class="desktop">Desktop</span>
-
-    </header>
-
-    <section class="conteudo"> 
-<div class="botoes"> 
-   <button class="btn" id="btn1" onclick="abrir_aba(1);">aba 1</button>
-   <button class="btn" id="btn2" onclick="abrir_aba(2);">aba 2</button>
-   <button class="btn" id="btn3" onclick="abrir_aba(3);">aba 3</button>
-   <button class="btn" id="btn4" onclick="abrir_aba(4);">aba 4</button>
-   <button class="btn" id="btn5" onclick="abrir_aba(5);">aba 5</button>
-</div>
-<div class="abas">
-    <div class="aba" id="aba1">estou na aba 1</div>
-    <div class="aba" id="aba2">
-        De: <input type="number" id="inicio">
-        Ate: <input type="number" id="fim"><br>
-        <div id="resultado"><span id="valor"></span></div><br><br>
-        <button onclick="contar()">contar</button>
+    <div class="form">
+        <input type="text" id="valor">
+    
+    <div>
+        <button id="btnInserir">Adicionar na Fila</button>
+        <button id="btnRemover">Remover da Fila</button>
     </div>
-    <div class="aba" id="aba3">estou na aba 3</div>
-    <div class="aba" id="aba4">estou na aba 4</div>
-    <div class="aba" id="aba5">estou na aba 5</div>
-</div>
-     </section>
+    <div>
+        Fila: <span id="saida_fila"></span><br>
+        Ultimo removido: <span id="removido_fila"></span>
+    </div>
+    <script src="estrutura.js"></script>
 </body>
 </html>
